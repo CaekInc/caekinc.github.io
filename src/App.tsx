@@ -2,7 +2,9 @@ import type { Component } from 'solid-js';
 
 const App: Component = () => {
   return (
-    <p class="text-4xl text-green-700 text-center py-20">Hello tailwind!</p>
+      <div class="flex justify-center flex-col bg-neonBlack">
+        <h1 class="text-6xl text-neonBlue text-center py-20">CAEK Inc web</h1>
+      </div>
   );
 };
 
