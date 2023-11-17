@@ -1,6 +1,11 @@
 {
   "plugins": ["solid"],
   "extends": [
-    "plugin:solid/typescript"
-  ]
+    "plugin:solid/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": { "project": ["./tsconfig.json"] },
+  "rules": {
+    "prettier/prettier": [ "error", { "endOfLine" : "auto" } ]
+  }
 }

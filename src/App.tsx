@@ -1,11 +1,20 @@
-import type { Component } from 'solid-js';
+import type {Component} from 'solid-js';
+import {Route, Router, Routes} from "@solidjs/router";
+import MainLayout from "./layout/main";
 
 const App: Component = () => {
-  return (
-      <div class="flex justify-center flex-col bg-neonBlack">
-        <h1 class="text-6xl text-neonBlue text-center py-20">CAEK Inc web</h1>
-      </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path={'/'} component={MainLayout} />
+                <Route path={'/'} component={MainLayout} />
+            </Routes>
+            <div class="w-full h-screen bg-neonBlack">
+                <MainLayout/>
+            </div>
+        </Router>
+
+    );
 };
 
 export default App;
