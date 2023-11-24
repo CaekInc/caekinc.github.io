@@ -1,6 +1,6 @@
 import type {Component} from 'solid-js';
 import {Route, Router, Routes} from "@solidjs/router";
-import MainLayout from "./layout/main";
+import MainLayout from "./layouts/main";
 
 const App: Component = () => {
     return (

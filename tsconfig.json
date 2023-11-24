@@ -20,7 +20,7 @@
         "./src/assets/*"
       ],
       "@layout/*": [
-        "./src/layout/*"
+        "src/layouts/*"
       ],
       "@pages/*": [
         "./src/pages/*"
